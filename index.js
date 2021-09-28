@@ -3,7 +3,7 @@ const exec = util.promisify(require("child_process").exec);
 
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3842;
 
 const cors = require("cors");
 app.use(cors());
