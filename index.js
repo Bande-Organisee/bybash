@@ -18,6 +18,7 @@ async function scanMap(ipMap, portMap) {
 }
 
 app.get("/michel", (req, res) => {
+  console.log("michel envoyé");
   res.send("M I C H E L");
 });
 
@@ -29,6 +30,7 @@ app.get("/getIp", async (req, res) => {
     const response = await scanMap(ipQuery, portQuery);
     res.send(response);
   }
+  console.log("scan envoyé");
 });
 
 app.listen(port, () => {
