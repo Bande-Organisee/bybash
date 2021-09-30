@@ -15,10 +15,8 @@ let options = {
   cert: cert,
 };
 
-/*
 const cors = require("cors");
 app.use(cors());
-*/
 
 /* requetes api */
 
