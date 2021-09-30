@@ -6,7 +6,7 @@ const https = require("https");
 const fs = require("fs");
 
 const app = express();
-const port = 443;
+const port = 3842;
 
 let key = fs.readFileSync(__dirname + "/ssl-cert-snakeoil.key");
 let cert = fs.readFileSync(__dirname + "/ssl-cert-snakeoil.pem");
