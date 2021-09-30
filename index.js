@@ -8,8 +8,8 @@ const fs = require("fs");
 const app = express();
 const port = 3842;
 
-let key = fs.readFileSync(__dirname + "/etc/ssl/private/ssl-cert-snakeoil.key");
-let cert = fs.readFileSync(__dirname + "/etc/ssl/certs/ssl-cert-snakeoil.pem");
+let key = fs.readFileSync(__dirname + "/ssl-cert-snakeoil.key");
+let cert = fs.readFileSync(__dirname + "/ssl-cert-snakeoil.pem");
 let options = {
   key: key,
   cert: cert,
