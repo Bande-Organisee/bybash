@@ -34,16 +34,19 @@ async function scanMap(ipMap, portMap) {
 }
 
 app.get("/", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   console.log("accueil");
   res.send("askip c'est en https");
 });
 
 app.get("/michel", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   console.log("michel envoyé");
   res.send("M I C H E L");
 });
 
 app.get("/getIp", async (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   const ipQuery = req.query.ip;
   const portQuery = req.query.port;
 
